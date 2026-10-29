@@ -1,0 +1,35 @@
+locale,category,value
+en_US,eye_color,blue
+en_US,eye_color,brown
+en_US,eye_color,green
+en_US,eye_color,gray
+en_US,eye_color,hazel
+en_US,eye_color,amber
+de_DE,eye_color,blau
+de_DE,eye_color,braun
+de_DE,eye_color,grün
+de_DE,eye_color,grau
+de_DE,eye_color,haselnussbraun
+de_DE,eye_color,bernsteinfarben
+en_US,phone_format,(###) ###-####
+en_US,phone_format,###-###-####
+en_US,phone_format,+1 ### ### ####
+en_US,phone_format,###.###.####
+de_DE,phone_format,0### #######
+de_DE,phone_format,+49 ### #######
+de_DE,phone_format,(0###) ######
+de_DE,phone_format,0#### ######
+en_US,address_format,"{house} {street}, {city}, {state} {zip}"
+en_US,address_format,"{house} {street}, Apt. {apt}, {city}, {state} {zip}"
+en_US,address_format,"{house} {street}, Suite {apt}, {city}, {state} {zip}"
+de_DE,address_format,"{street} {house}, {zip} {city}"
+de_DE,address_format,"{street} {house}, Wohnung {apt}, {zip} {city}"
+de_DE,address_format,"{street} {house}, {zip} {city}, {state}"
+en_US,email_format,{first}.{last}
+en_US,email_format,{first}{last}##
+en_US,email_format,{f}{last}
+en_US,email_format,{first}_{last}###
+de_DE,email_format,{first}.{last}
+de_DE,email_format,{first}{last}##
+de_DE,email_format,{f}.{last}
+de_DE,email_format,{last}.{first}##
