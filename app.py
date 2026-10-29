@@ -38,11 +38,15 @@ if st.session_state.locale != locale or st.session_state.seed != seed:
     st.session_state.seed = seed
     st.session_state.batch = 1
 
-col3, col4, col5 = st.columns([1, 1, 4])
-if col3.button("Previous batch", disabled=st.session_state.batch == 1):
+def previous_batch():
     st.session_state.batch = st.session_state.batch - 1
-if col4.button("Next batch"):
+
+def next_batch():
     st.session_state.batch = st.session_state.batch + 1
+
+col3, col4, col5 = st.columns([2, 2, 5])
+col3.button("Previous batch", on_click=previous_batch, disabled=st.session_state.batch == 1)
+col4.button("Next batch", on_click=next_batch)
 
 batch = st.session_state.batch
 users = run_query("SELECT * FROM generate_users(%s, %s, %s)", (locale, int(seed), batch))
